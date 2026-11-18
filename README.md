@@ -2,6 +2,14 @@
 
 Modul verifikasi Cloudflare Turnstile + animasi *waiting ticker* (`auth-cyber-tips.json`, 500 kalimat) yang **universal** dan bebas dependensi framework. Siap dipakai di proyek **HTML**, **PHP**, **JavaScript**, **TypeScript**, dan **CSS** dengan struktur folder apa pun.
 
+## Preview
+
+<video src="assets/preview.webm" controls muted playsinline width="360">
+  <a href="assets/preview.webm">Lihat Video Preview (WebM)</a>
+</video>
+
+[Lihat Video Preview (assets/preview.webm)](assets/preview.webm)
+
 ## Struktur Paket
 
 ```text
