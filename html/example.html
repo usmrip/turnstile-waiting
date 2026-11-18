@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal Turnstile Waiting Demo (HTML)</title>
+  <link rel="stylesheet" href="../css/turnstile-waiting.css" />
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #09090b; color: #f4f4f5; display: grid; place-items: center; min-height: 100vh; padding: 24px; }
+    .card { width: 100%; max-width: 380px; background: #18181b; border: 1px solid #27272a; border-radius: 16px; padding: 24px; }
+    h1 { margin: 0 0 16px; font-size: 1.25rem; }
+    input[type="email"] { width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px; border: 1px solid #3f3f46; background: #09090b; color: #fff; margin-bottom: 12px; }
+    .tw-submit { width: 100%; height: 44px; border-radius: 999px; border: 0; background: #f4f4f5; color: #09090b; font-weight: 600; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <form class="card" data-tw-form action="#" method="post">
+    <h1>Masuk</h1>
+    <input type="email" name="email" placeholder="nama@email.com" required />
+
+    <div class="tw-turnstile-wrapper">
+      <!-- Ganti data-sitekey dengan Site Key Turnstile Anda -->
+      <div class="cf-turnstile" data-theme="dark" data-size="flexible" data-sitekey="1x00000000000000000000AA"></div>
+    </div>
+    <div class="tw-ticker" data-ready-text="ayo masuk!" aria-live="polite">
+      <div class="tw-slot"></div>
+    </div>
+
+    <button class="tw-submit" type="submit" disabled aria-disabled="true">Login</button>
+  </form>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?hl=id" async defer></script>
+  <script src="../js/turnstile-waiting.js"></script>
+  <script>
+    TurnstileWaiting.init({
+      tipsUrl: "../data/auth-cyber-tips.json"
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "universal-turnstile-waiting",
+  "version": "1.0.0",
+  "description": "Universal Cloudflare Turnstile & Waiting Ticker module for HTML, PHP, JavaScript, TypeScript, and CSS",
+  "main": "js/turnstile-waiting.js",
+  "types": "ts/turnstile-waiting.ts",
+  "license": "MIT",
+  "keywords": [
+    "cloudflare",
+    "turnstile",
+    "captcha",
+    "waiting-ticker",
+    "typescript",
+    "php"
+  ]
+}
