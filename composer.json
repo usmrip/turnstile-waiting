@@ -1,0 +1,29 @@
+{
+  "name": "usmrip/turnstile-waiting",
+  "description": "Universal Cloudflare Turnstile & Waiting Ticker module for HTML, PHP, JavaScript, TypeScript, and CSS",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "cloudflare",
+    "turnstile",
+    "captcha",
+    "waiting-ticker",
+    "php",
+    "javascript",
+    "typescript"
+  ],
+  "authors": [
+    {
+      "name": "usmrip",
+      "email": "iam@usm.rip"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "UniversalCaptcha\\": "php/"
+    }
+  }
+}
